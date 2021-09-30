@@ -21,7 +21,7 @@ CREATE FUNCTION auth0.get_config(key text) RETURNS text
       )
       select distinct on (key) replace(k, 'auth0.', '') as key, value
       from kv_settings
-      order by key, setdatabase desc;
+      order by key, setdatabase desc
   )
 
   SELECT "value" FROM auth0_config WHERE "key"=$1;
