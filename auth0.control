@@ -1,5 +1,5 @@
 default_version = '0.1'
-module_pathname = '$libdir/auth0
+module_pathname = '$libdir/auth0'
 relocatable = false
 schema = 'auth0'
 requires = 'http'
